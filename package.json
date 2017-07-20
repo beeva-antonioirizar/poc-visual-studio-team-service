@@ -30,7 +30,8 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
     "vulcanize": ">= 1.4.2",
-    "web-component-tester": "^4.0.0"
+    "web-component-tester": "^4.0.0",
+    "xunit-file": "^1.0.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --reporter xunit-file ./test_test/*.spec.js ",
