@@ -33,7 +33,8 @@
     "web-component-tester": "^4.0.0"
   },
   "scripts": {
-    "test": "gulp test:local",
+    "test": "./node_modules/mocha/bin/mocha ./test_test/*.spec.js",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha ./test_test/*.spec.js -- ",
     "start": "gulp serve"
   },
   "engines": {
