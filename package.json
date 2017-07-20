@@ -33,7 +33,7 @@
     "web-component-tester": "^4.0.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha ./test_test/*.spec.js",
+    "test": "./node_modules/mocha/bin/mocha --reporter xunit-file ./test_test/*.spec.js ",
     "coverreport": "istanbul report --root ./coverage cobertura",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha ./test_test/*.spec.js -- ",
     "start": "gulp serve"
