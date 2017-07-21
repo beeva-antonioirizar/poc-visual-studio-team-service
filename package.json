@@ -27,6 +27,7 @@
     "istanbul": "^0.4.5",
     "merge-stream": "^1.0.0",
     "mocha": "^3.4.2",
+    "mocha-junit-reporter": "^1.13.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
     "vulcanize": ">= 1.4.2",
@@ -34,7 +35,7 @@
     "xunit-file": "^1.0.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --reporter xunit-file ./test_test/*.spec.js ",
+    "test": "./node_modules/mocha/bin/mocha ./test_test/*.spec.js --reporter mocha-junit-reporter ",
     "coverreport": "istanbul report --root ./coverage cobertura",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha ./test_test/*.spec.js -- ",
     "start": "gulp serve"
